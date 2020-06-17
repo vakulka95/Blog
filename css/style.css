@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #777 ;
+    font-size: 14px;
+    min-width: 900px;
+}
+
+.header-wrap{
+    max-width: 1135px;
+    min-width: 900px;
+    padding: 5vh 0;
+    margin: 0 auto;
+}
+
+.header-hat{
+    display: flex; 
+    justify-content: space-between;
+}
+
+
+.header-hat ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 23px;
+    font-size: 16px;
+
+}
+
+.header-hat a{
+    color: #777;
+    text-decoration: none;
+}
+
+.logo a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0.2em;
+    color: #000;
+}
+
+
+.header-hat .active
+{
+    color: #bfba55;
+}
+
+.header-hat li:last-child{
+    margin-right: 0;
+}
+
+.main .hero-section{
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../img/home-bg.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+.hero-section .hero-section-title{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.hero-section-title h1{
+    padding-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.hero-section-title p{
+    padding-bottom: 20px;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: #bfba55;
+}
+
+.hero-section-title .discover{
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+
+    font-family: 'Nassim Latin Regular', serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+}
+
+.hero-section-title .discover:active{
+    background: linear-gradient(180deg, #fff, #979797);
+}
+
+.main-wrap{
+    min-width: 900px;
+    max-width: 950px;
+    margin: 50px auto;
+
+
+}
+
+.main-wrap .post{
+    text-align: left;
+    margin: 30px 0;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(119, 119, 119, 0.2);
+}
+
+
+.main-wrap .post:last-child{
+    border: none;
+}
+
+
+.main-wrap .post img{
+    width: 100%;
+}
+
+.post .post-pic{
+    margin-bottom: 20px;
+}
+
+.post .post-details img{
+    width: 40px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.post .post-title{
+    text-align: left;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.post .post-details{
+    margin-bottom: 15px;
+}
+
+.post .post-details::after{
+    content: "";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+.post-details a{
+    color: #000;
+    text-decoration: none;
+}
+
+.post-details a:hover{
+    text-decoration: underline;
+}
+
+.post-details .fa-comment{
+    margin-right: 3px;
+}
+
+
+.post .post-details p{
+    float: left;
+    padding: 10px 0;
+    margin-right: 15px;
+    color: #000;
+}
+
+.post .post-text{
+    text-align: left;
+    line-height: 1.5;
+}
+
+.post .continue-reading{
+    border-radius: 50px;
+    border: 1px solid rgba(119, 119, 119, 0.3);
+    outline: none;
+    font-family: 'Nassim Latin Regular', serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: rgba(119, 119, 119, 0.7);
+    background-color: #fff;
+    margin: 25px 0;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.continue-reading:active{
+    background: linear-gradient(180deg, #fff, #D3D3D3);
+}
+
+.footer{
+    background-color: #000;
+}
+
+.footer .footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-width: 900px;
+    max-width: 950px;
+    padding: 50px 0;
+}
+
+.footer .footer-wrap p{
+    padding-top: 15px;
+}
+
+.footer-wrap .epam-lab{
+    width: 30vw;
+}
+
+.footer .footer-wrap h2{
+    color: #fff;
+}
